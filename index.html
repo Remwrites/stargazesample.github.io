@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stargaze Beauty - Professional Beauty Services">
+    <title>Stargaze Beauty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="top-bar">
+        <div class="container">
+            <div class="header-row">
+                <div class="logo">
+                    <a href="index.html"><img src="images/stargazelogo.WEBP" alt="Stargaze Beauty Logo"></a>
+                </div>
+                <div class="search-bar">
+                    <img src="images/search.png" alt="Search Icon" class="search-icon">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+                    <span id="clearText" class="clear-text" style="display: none;">×</span>
+                    <button id="searchButton" type="button" class="search-button">&#62;</button>
+                </div>
+                <div class="contact-info">
+                    <p>0161 320 7826</p>
+                </div>
+                <div class="header-buttons">
+                    <a href="https://www.fresha.com/a/stargaze-aesthetics-clinic-denton-uk-172-hyde-road-xuy8szw3" class="book-consultation">Book Consultation</a>
+                    <a href="#" class="request-callback">Request Callback</a>
+                </div>
+                <!-- Hamburger Icon for Mobile Menu -->
+                <div class="hamburger" onclick="toggleMobileMenu()">☰</div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    <nav class="menu-bar">
+        <div class="container">
+            <ul class="menu-items">
+                <li class="menu-item no-dropdown"><a href="index.html" class="menu-label">Home</a></li>
+                <li class="menu-item"><a href="prptreatments.html" class="menu-label">PRP Treatments</a></li>
+                <li class="menu-item no-dropdown"><a href="warts.html" class="menu-label">Warts, Moles</a></li>
+                <li class="menu-item no-dropdown"><a href="rfmicro.html" class="menu-label">RF Microneedling</a></li>
+                <li class="menu-item no-dropdown"><a href="laserhair.html" class="menu-label">Laser Removal</a></li>
+                <li class="menu-item no-dropdown"><a href="hydrafacial.html" class="menu-label">Hydra Facial</a></li>
+                <li class="menu-item no-dropdown"><a href="vitamin.html" class="menu-label">Vitamin Therapy</a></li>
+                <li class="menu-item"><a href="facetreatments.html" class="menu-label">Face Treatments</a></li>
+                <li class="menu-item no-dropdown"><a href="hairtreatments.html" class="menu-label">Hair Treatments</a></li>
+                <li class="menu-item no-dropdown"><a href="aboutus.html" class="menu-label">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu (hidden by default) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="prptreatments.html">PRP Treatments</a></li>
+            <li><a href="warts.html">Warts, Moles</a></li>
+            <li><a href="rfmicro.html">RF Microneedling</a></li>
+            <li><a href="laserhair.html">Laser Removal</a></li>
+            <li><a href="hydrafacial.html">Hydra Facial</a></li>
+            <li><a href="vitamin.html">Vitamin Therapy</a></li>
+            <li><a href="facetreatments.html">Face Treatments</a></li>
+            <li><a href="hairtreatments.html">Hair Treatments</a></li>
+            <li><a href="aboutus.html">About</a></li>
+        </ul>
+    </div>
+
+    <div class="info-bar">
+        <div class="container">
+            <div class="info-content">
+                <div class="info-item">
+                    <img src="images/locationicon.png" alt="Manchester Icon">
+                    <span>Manchester Based</span>
+                </div>
+                <div class="info-item">
+                    <a href="https://uk.trustpilot.com/review/stargazebeauty.co.uk" target="_blank" rel="noopener noreferrer">
+                        <img src="images/reviewicon.png" alt="TrustPilot Reviews">
+                    </a>
+                    <span>Best North West Group & 5 star reviews</span>
+                </div>
+                <div class="info-item">
+                    <img src="images/care.png" alt="Expert Care Icon">
+                    <span>10+ Years of Expert Care</span>
+                </div>
+                <div class="info-item">
+                    <img src="images/award.png" alt="Award Icon">
+                    <span>Renowned Beauty Experts</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="home">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 style="text-align: center; font-family: 'Platypi', sans-serif;">Unrivalled Care & Expertise</h1>
+                <p style="text-align: center; font-family: 'Platypi', sans-serif;">Trusted for over 10 years</p>
+            </div>
+            <div class="hero-image">
+                    <img src="images/trustpilot.png" alt="TrustPilot" class="trustpilot-image">
+            </div>
+        </div>
+    </div>
+     <!-- Social Media Icons -->
+     <div class="social-icons">
+        <a href="https://www.instagram.com/stargaze.aesthetics/" target="_blank">
+            <img src="images/IGLOGO.webp" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/stargaze.aesthetics?_rdr" target="_blank">
+            <img src="images/facebooklogo.png" alt="Facebook" class="social-icon">
+        </a>
+    </div>
+</section>
+
+
+<section class="bespoke-treatments">
+    <h2>We provide highly advanced and customized treatment packages tailored specifically to meet your needs.</h2>
+    <div class="tabs">
+        <div class="tab">Dermatological Treatments</div>
+        <div class="tab">Aesthetic Proceduress</div>
+    </div>
+    <div class="highlights">
+        <div class="highlight">
+            <img src="images/careblack.png" alt="Expert Care Icon">
+            <p>10+ years of expert care</p>
+        </div>
+        <div class="highlight">
+            <img src="images/reviewblack.png" alt="5 Star Reviews Icon">
+            <p>200+ 5 star reviews</p>
+        </div>
+        <div class="highlight">
+            <img src="images/locationblack.png" alt=Nationwide Clinics Icon">
+            <p>Manchester Based</p>
+        </div>
+        <div class="highlight">
+            <img src="images/awardblack.png" alt="Renowned Medical Experts Icon">
+            <p>Renowned beauty experts</p>
+        </div>
+    </div>
+</section>
+
+<section id="banner" class="banner-section">
+    <div class="banner-image">
+        <img src="images/Banner.png" alt="Banner Image">
+    </div>
+    <div class="banner-content">
+        <h2>EXCEPTIONAL CARE & EXPERTISE</h2>
+        <p>Discover Stargaze Aesthetics, your premier aesthetic clinic in Manchester. Founded by Stephanie Grant, a Registered Nurse with over a decade of experience in medical settings, specializing in advanced nursing care and innovative treatments like PRP and Microneedling. At Stargaze Aesthetics, we prioritize your well-being beyond treatment, offering comprehensive aftercare and personalized support after every appointment. Enjoy a complimentary consultation and hair analysis with us, ensuring you make informed decisions. Explore our before and after galleries for PRP, Microneedling, Profhilo, and more, and find out how we can enhance your natural beauty. Learn more about our commitment to excellence</p>
+        <a href="#about" class="find-more-button">Find More About Us</a>
+    </div>
+</section>
+
+<div class="fixed-buttons">
+    <div class="button-box">
+        <a href="https://www.fresha.com/a/stargaze-aesthetics-clinic-denton-uk-172-hyde-road-xuy8szw3" class="button">BOOK ONLINE</a>
+    </div>
+    <div class="button-box">
+        <a href="#contact-us" class="button">CONTACT US</a>
+    </div>
+</div>
+
+<section id="services" class="services-section">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <img src="images/prptreatment.jpg" alt="prptreatment">
+                <div class="service-details">
+                    <h3>PRP Treatments</h3>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/hydrafacial.jpg" alt="Hydrafacial">
+                <div class="service-details">
+                    <h3>Hydra Facial</h3>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/wrinkleanti.jpg" alt="Antiwrinkle">
+                <div class="service-details">
+                    <h3>Anti Wrinkle Treatments</h3>
+                    <a href="#" class="view-details">View Details</a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+<section id="slider" class="slider-section">
+    <div class="slider-container">
+        <div class="slider-wrapper">
+          
+            <div class="slide">
+                <div class="slide-content">
+                    <h3>TREATMENT IN FOCUS</h3>
+                    <h2>ANTI WRINKLE TREATMENT</h2>
+                    <p>Anti-wrinkle treatments are frequently used to relax facial muscles, therefore reducing or totally eliminating wrinkles, particularly those caused by facial expressions. As we age, our skin may make us appear older than we are. Fortunately, we no longer have to accept the effects of ageing on our skin! We may employ non-invasive treatments like these injections to look as fresh as we feel on the inside.</p>
+                    <a href="#" class="view-details">Request an Appointment</a>
+                </div>
+                <div class="slide-image">
+                    <img src="images/wrinkleanti.jpg" alt="Non-Surgical Rhinoplasty">
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <h3>TREATMENT IN FOCUS</h3>
+                    <h2>HYDRRA FACIAL</h2>
+                    <p>Experience the revolutionary benefits of Hydra Facial Treat,emt. This cutting-edge treatment promotes skin regeneration and improves overall skin health...</p>
+                    <a href="#" class="view-details">Request an Appointment</a>
+                </div>
+                <div class="slide-image">
+                    <img src="images/hydrafacial.jpg" alt="Exosome">
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <h3>TREATMENT IN FOCUS</h3>
+                    <h2>PRP FACIAL</h2>
+                    <p>Our PRP Facial uses your own platelet-rich plasma to rejuvenate your skin, giving you a natural glow and reducing the signs of aging...</p>
+                    <a href="#" class="view-details">Request an Appointment</a>
+                </div>
+                <div class="slide-image">
+                    <img src="images/prpfaceresult2.jpg" alt="PRP Facial">
+                </div>
+            </div>
+        </div>
+        <div class="slider-navigation">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+        <div class="slider-dots">
+            <!-- Dots will be generated dynamically -->
+        </div>
+    </div>
+</section>
+
+
+
+<section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-mark">“</div>
+                    <p>"Excellent service! Amazing customer support. Everything tip-top! Thank you so much. I’m so pleased With the results. See you again soon x"</p>
+                    <div class="testimonial-footer">
+                        <p class="customer-name">Michal Pietruszka</p>
+                        <p class="treatment">Teeth Whitening</p>
+                        <img src="images/5stars.webp" alt="5 Stars" class="stars-image">
+                    </div>
+                </div>
+                <div class="testimonial-image">
+                    <img src="images/michal.png" alt="Customer Image">
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-mark">“</div>
+                    <p>"I came in for training with Stephanie and travelled from abroad. She was so dedicated and patient throughout the course. I learnt so much and am looking forward to setting up on my own. I feel fully equipped and ready. The staff are also really friendly and helpful. I highly recommend Stargaze training to anyone looking to set up, worth the travel to train with them."</p>
+                    <div class="testimonial-footer">
+                        <p class="customer-name">Mishel Mutenure</p>
+                        <p class="treatment">PRP Training</p>
+                        <img src="images/5stars.webp" alt="5 Stars" class="stars-image">
+                    </div>
+                </div>
+                <div class="testimonial-image">
+                    <img src="images/misle.png" alt="Customer Image">
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="quote-mark">“</div>
+                    <p>"I had a wonderful experience with Steph. She was professional and knowledgeable about the issues of my skin. She walked me through all that she was doing and afterwards my skin felt soft and I was glowing. I did the chemical peel, vitamin c injection and plasma rejuvenation.</p>
+                    <div class="testimonial-footer">
+                        <p class="customer-name">Brit Grant</p>
+                        <p class="treatment">Chemical Peel, Vitamin C Injection & Plasma Rejuvenation</p>
+                        <img src="images/5stars.webp" alt="5 Stars" class="stars-image">
+                    </div>
+                </div>
+                <div class="testimonial-image">
+                    <img src="images/britgrant.png" alt="Customer Image">
+                </div>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+        <div class="social-links">
+            <a href="https://www.trustpilot.com/review/stargazebeauty.co.uk" target="_blank"><img src="images/trustpilot.png" alt="Trustpilot"></a>
+            <a href="https://www.google.co.uk/search?q=stargaze+beauty+review&sca_esv=4c9d44f7b0b87e81&sca_upv=1&hl=en&sxsrf=ADLYWIJPptiGqNu3q4CnoKVsvov2350BZg%3A1722208088307&ei=WM-mZru6EsqDhbIP1eKWmA4&ved=0ahUKEwi7xtSK7cqHAxXKQUEAHVWxBeMQ4dUDCBA&uact=5&oq=stargaze+beauty+review&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnN0YXJnYXplIGJlYXV0eSByZXZpZXcyBhAAGBYYHjILEAAYgAQYhgMYigUyCBAAGIAEGKIEMggQABiABBiiBEjgP1D_AVjxHHAEeACQAQCYAeoBoAGnC6oBBTYuMi4zuAEDyAEA-AEBmAIOoALQC8ICDhAuGIAEGLADGMcBGK8BwgIHEAAYsAMYHsICDhAAGIAEGLADGIYDGIoFwgILEAAYgAQYsAMYogTCAg4QLhiABBjHARiOBRivAcICCBAAGBYYHhgPwgIdEC4YgAQYxwEYjgUYrwEYlwUY3AQY3gQY4ATYAQHCAggQABiiBBiJBcICBRAhGKABmAMAiAYBkAYKugYGCAEQARgUkgcFOS4yLjOgB7Uu&sclient=gws-wiz-serp#lrd=0x487bb15c0a772441:0xe29f0a4680875f7f,1,,,," target="_blank"><img src="images/googlereviews.png" alt="Google Reviews"></a>
+        </div>
+    </div>
+</section>
+
+
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>At Stargaze Beauty, we are dedicated to providing the best beauty treatments and services. Our team of experienced professionals is here to help you look and feel your best.</p>
+        <p>Our mission is to offer personalized beauty services that cater to the unique needs of each client.</p>
+        <a href="aboutus.html" class="find-out-more">Find Out More <span class="arrow">&#8595;</span></a>
+    </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact2-info">
+                <h2>Ready to begin your journey?</h2>
+                <p>Come and see our expert surgeons to discuss the best options available for you. Book a consultation and take that first step.</p>
+                <p>Talk to an expert <a href="tel:01613207826">0161 320 7826</a></p>
+                <div class="contact-buttons">
+                    <a href="https://www.fresha.com/a/stargaze-aesthetics-clinic-denton-uk-172-hyde-road-xuy8szw3" class="contact-button">Book a Consultation</a>
+                </div>
+                <a href="#" class="download-brochure"></a>
+            </div>
+            <div class="contact-form">
+                <h3>Ask us a question</h3>
+                <form action="submit_form.php" method="POST">
+                    <label for="first-name">First Name *</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    
+                    <label for="phone">Telephone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="postcode">Postcode</label>
+                    <input type="text" id="postcode" name="postcode">
+                    
+                
+                    
+                    <label for="treatment-category">Select a Treatment Category *</label>
+                    <select id="treatment-category" name="treatment-category" required>
+                        <option value="">Dermatological</option>
+                        <option value="">Aesthetic</option>
+                        <option value="">General Query</option>
+                        <!-- Add options here -->
+                    </select>
+                    
+                    <label>Would you like to receive emails about special offers & news?</label>
+                    <div class="radio-group">
+                        <label for="yes">
+                            <input type="radio" id="yes" name="subscribe" value="yes"> Yes
+                        </label>
+                        <label for="no">
+                            <input type="radio" id="no" name="subscribe" value="no"> No
+                        </label>
+                    </div>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="location" class="location-section">
+    <div class="container">
+        <div class="location-info">
+            <p>Stargaze Aesthetic Clinic<br>
+            125 Wellington Road South,<br>
+            Stockport, Manchester,<br>
+            SK1 3TS</p>
+            <p>Phone:<br>
+            0161 320 7826</p>
+            <p>Email:<br>
+            info@stargazebeauty.co.uk</p>
+        </div>
+        <div class="location-map">
+            <img src="images/location2.png" alt="Location Map">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Stargaze Beauty. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

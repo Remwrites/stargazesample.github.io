@@ -1,0 +1,101 @@
+backend:
+  name: git-gateway
+  branch: main #
+
+media_folder: "static/images/uploads" # Path to store uploaded images in the repository
+public_folder: "/images/uploads" # URL for uploaded images
+
+collections:
+  - name: "pages" # Collection for all pages
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "index"
+        file: "src/content/index.md" # Create a Markdown file for the homepage content
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - label: "About Us"
+        name: "aboutus"
+        file: "src/content/aboutus.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - label: "Anti-Wrinkle Treatments"
+        name: "antiwrinkle"
+        file: "src/content/antiwrinkle.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - label: "Face Treatments"
+        name: "facetreatments"
+        file: "src/content/facetreatments.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - label: "Hair Treatments"
+        name: "hairtreatments"
+        file: "src/content/hairtreatments.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - label: "HydraFacial"
+        name: "hydrafacial"
+        file: "src/content/hydrafacial.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - label: "Laser Hair Removal"
+        name: "laserhair"
+        file: "src/content/laserhair.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - label: "PRP Face"
+        name: "prpface"
+        file: "src/content/prpface.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - label: "PRP Treatments"
+        name: "prptreatments"
+        file: "src/content/prptreatments.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - label: "Results"
+        name: "results"
+        file: "src/content/results.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Gallery Images", name: "gallery", widget: "list", fields: [{label: "Image", name: "image", widget: "image"}] }
+      - label: "RF Microneedling"
+        name: "rfmicro"
+        file: "src/content/rfmicro.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - label: "Vitamin Therapy"
+        name: "vitamin"
+        file: "src/content/vitamin.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - label: "Warts & Moles"
+        name: "warts"
+        file: "src/content/warts.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Content", name: "content", widget: "markdown" }
